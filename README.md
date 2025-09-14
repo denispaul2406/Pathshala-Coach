@@ -2,9 +2,9 @@
 
 **Production-Ready Progressive Web App (PWA) for SSC, Banking & State Exam Aspirants**
 
-[![Status: Production Ready](https://img.shields.io/badge/Status-Production%20Ready-green.svg)](https://smart-pathshala.preview.emergentagent.com)
-[![Backend: 100% Functional](https://img.shields.io/badge/Backend-100%25%20Functional-brightgreen.svg)](#backend-api-status)
-[![Frontend: 100% Complete](https://img.shields.io/badge/Frontend-100%25%20Complete-brightgreen.svg)](#frontend-status)
+[![Status: Production Ready](https://img.shields.io/badge/Status-Production%20Ready-green.svg)](https://pathshala-coach.netlify.app/)
+[![Backend: 100% Functional](https://img.shields.io/badge/Backend-100%25%20Functional-brightgreen.svg)](https://github.com/denispaul2406/Pathshala-Coach-backend)
+[![Frontend: 100% Complete](https://img.shields.io/badge/Frontend-100%25%20Complete-brightgreen.svg)](https://github.com/denispaul2406/Pathshala-Coach-frontend)
 [![Mobile: Fully Responsive](https://img.shields.io/badge/Mobile-Fully%20Responsive-blue.svg)](#responsive-design)
 [![Latest: All Issues Fixed](https://img.shields.io/badge/Latest-All%20Issues%20Fixed-success.svg)](#latest-updates)
 
@@ -324,12 +324,12 @@ REACT_APP_BACKEND_URL=https://your-backend-url.com
 
 ## 👥 **Team & Support**
 
-**Built by**: Emergent AI Development Team  
+**Built by**: AI Learning Labs  
 **Technology Partner**: OpenAI Academy x NxtWave Hackathon  
 **Target Market**: Indian Competitive Exam Ecosystem  
 
 ### **Support & Documentation**
-- **Live Demo**: [https://smart-pathshala.preview.emergentagent.com](https://smart-pathshala.preview.emergentagent.com)
+- **Live Demo**: [https://pathshala-coach.netlify.app/](https://pathshala-coach.netlify.app/)
 - **API Documentation**: Auto-generated with FastAPI
 - **Issues & Feedback**: GitHub Issues or direct contact
 
