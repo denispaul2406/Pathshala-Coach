@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* OpenAI Buildathon Inspired Gradients */
+.gradient-openai {
+  background: linear-gradient(135deg, #00A67E 0%, #00D4AA 50%, #00A67E 100%);
+}
+
+.gradient-buildathon {
+  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #60A5FA 100%);
+}
+
+.gradient-innovation {
+  background: linear-gradient(135deg, #7C3AED 0%, #A855F7 50%, #C084FC 100%);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #059669 0%, #10B981 50%, #34D399 100%);
+}
+
+.gradient-warning {
+  background: linear-gradient(135deg, #D97706 0%, #F59E0B 50%, #FBBF24 100%);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom button hover effects */
+.btn-float {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.btn-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth progress bar animation */
+.progress-animate {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+}
+
+/* Loading spinner */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Focus states for accessibility */
+.focus-ring {
+  transition: all 0.2s ease;
+}
+
+.focus-ring:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #10b981;
+  ring-offset: 2px;
+}
+
+/* Custom radio button styling */
+.radio-custom {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.radio-custom:checked {
+  border-color: #10b981;
+  background: #10b981;
+}
+
+.radio-custom:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* PWA optimizations */
+.pwa-ready {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Offline indicator */
+.offline-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ef4444;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  z-index: 9999;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.offline-indicator.show {
+  transform: translateY(0);
+}
+
+/* Bilingual text support */
+.hindi-text {
+  font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* Enhanced typography */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Enhanced spacing for mobile */
+@media (max-width: 640px) {
+  .mobile-spacing > * + * {
+    margin-top: 1rem;
+  }
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Enhanced button states - OpenAI Theme */
+.btn-primary {
+  background: linear-gradient(135deg, #00A67E 0%, #00D4AA 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #008F6B 0%, #00B894 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 166, 126, 0.4);
+}
+
+.btn-buildathon {
+  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-buildathon:hover {
+  background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Enhanced card styles */
+.card-gradient {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Loading states */
+.skeleton {
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Micro-interactions */
+.micro-bounce {
+  animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -8px, 0);
+  }
+  70% {
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+/* Enhanced focus indicators */
+.focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Better text rendering */
+.text-crisp {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
